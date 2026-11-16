@@ -1,0 +1,30 @@
+CANTINHO DA PRINCESA — DEPLOY CLOUDFLARE WORKERS
+
+Este pacote usa autenticação no servidor. A senha é validada no Worker; a página e as fotos só são servidas depois da autenticação.
+
+PRÉ-REQUISITOS
+- Windows com Node.js instalado (https://nodejs.org/)
+- Conta Cloudflare já criada.
+
+PASSOS (PowerShell ou Terminal, dentro desta pasta):
+1) npm install -g wrangler
+2) npx wrangler login
+   (autorize a conexão no navegador)
+3) npx wrangler deploy
+4) Depois do primeiro deploy, defina a senha:
+   npx wrangler secret put SITE_PASSWORD
+   Digite: Princesa
+5) Defina a chave privada que assina a sessão:
+   npx wrangler secret put COOKIE_SECRET
+   Cole uma sequência longa e aleatória, por exemplo 40+ caracteres. Não compartilhe.
+6) Publique novamente:
+   npx wrangler deploy
+
+O endereço público será mostrado ao final do deploy (domínio workers.dev).
+Teste em uma janela anônima: deve pedir a senha; "princesa", "Princesa" e "PRINCESA" devem funcionar.
+
+IMPORTANTE
+- Não coloque este pacote em um repositório público.
+- Não compartilhe COOKIE_SECRET.
+- A senha padrão temporária no código só serve antes de configurar SITE_PASSWORD; configure o segredo antes de enviar o link.
+- A sessão fica autenticada por até 30 dias no mesmo navegador. Para sair, acesse /logout.

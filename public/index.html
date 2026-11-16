@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#fff2f6">
+<title>Um cantinho nosso ❤️</title>
+<style>
+:root{--pink:#f6a9c2;--rose:#c85b82;--ink:#593847;--cream:#fff8f5;--lilac:#eee5fa}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:linear-gradient(160deg,#fff5f7,#fffaf2 55%,#f6efff);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+button{font:inherit}.hidden{display:none!important}
+#lock{min-height:100svh;display:grid;place-items:center;padding:24px;position:relative;overflow:hidden}
+.glow{position:absolute;width:240px;height:240px;border-radius:50%;filter:blur(5px);opacity:.45;background:#ffd4e2;top:-90px;right:-80px}.glow.two{background:#e9d9ff;top:auto;right:auto;bottom:-110px;left:-90px}
+.lock-card{position:relative;width:min(100%,390px);padding:34px 25px;border:1px solid #fff;border-radius:30px;background:#ffffffd9;box-shadow:0 18px 55px #a65b7520;text-align:center;backdrop-filter:blur(12px)}
+.heart{font-size:42px;animation:beat 1.5s infinite}.eyebrow{font-size:12px;letter-spacing:2px;text-transform:uppercase;color:#b66b86}
+h1{font-family:Georgia,serif;font-weight:500;font-size:34px;line-height:1.15;margin:10px 0;color:#a94e72}
+p{line-height:1.65}.lock-card p{font-size:15px;color:#806675}
+input{width:100%;padding:16px;border:1px solid #edc4d2;border-radius:15px;background:#fffafc;text-align:center;font-size:18px;color:var(--ink);outline:none;margin:10px 0}
+input:focus{border-color:#c85b82;box-shadow:0 0 0 3px #f6a9c233}
+.primary{border:0;border-radius:999px;padding:14px 24px;background:linear-gradient(100deg,#d66d91,#b96dba);color:white;font-weight:650;box-shadow:0 8px 20px #c85b8230;cursor:pointer;width:100%}
+#error{min-height:22px;color:#bd4569;font-size:13px}
+main{max-width:760px;margin:auto;padding:22px 18px 70px}
+.hero{text-align:center;padding:58px 12px 35px;position:relative}
+.hero .tag{display:inline-block;padding:7px 13px;border-radius:99px;background:#fff;color:#b66b86;font-size:12px;letter-spacing:1px}
+.hero h1{font-size:clamp(39px,9vw,60px);margin:18px 0 12px}
+.hero p{max-width:490px;margin:0 auto;color:#806675}
+.sparkle{font-size:22px;margin-top:18px}
+.section{margin:26px 0;padding:25px 19px;border:1px solid #fff;border-radius:25px;background:#ffffffbd;box-shadow:0 10px 30px #a65b7510}
+.section h2{font:500 27px Georgia,serif;color:#a94e72;text-align:center;margin:0 0 9px}
+.sub{text-align:center;color:#967b88;font-size:14px;margin:0 0 20px}
+.gallery{display:grid;grid-template-columns:1fr 1fr;gap:13px}
+.polaroid{background:#fff;padding:9px 9px 17px;border-radius:5px;box-shadow:0 7px 20px #6e45521c;transform:rotate(-1.5deg)}
+.polaroid:nth-child(2){transform:rotate(1.7deg);margin-top:20px}.polaroid:nth-child(3){grid-column:1/-1;width:76%;justify-self:center;transform:rotate(-.7deg);margin-top:5px}
+.polaroid img{display:block;width:100%;height:220px;object-fit:cover;border-radius:2px}.polaroid:nth-child(3) img{height:250px}
+.caption{text-align:center;font:italic 15px Georgia,serif;color:#94657a;padding-top:10px}
+.note{font:17px/1.8 Georgia,serif;text-align:center;color:#765465;padding:10px 4px}
+.note strong{color:#b45278;font-weight:500}
+.reveal{text-align:center}.reveal button{max-width:260px}.secret{margin-top:18px;padding:18px;border-radius:18px;background:#fff4f8;font:italic 17px/1.7 Georgia,serif;color:#86536a}
+.footer{text-align:center;color:#a17f8e;font-size:12px;padding:22px 0}
+.float{position:fixed;bottom:-30px;pointer-events:none;opacity:0;animation:floatUp 5s linear forwards;z-index:5}
+@keyframes beat{50%{transform:scale(1.13)}}@keyframes floatUp{0%{transform:translateY(0) rotate(0);opacity:0}15%{opacity:.7}100%{transform:translateY(-110vh) rotate(35deg);opacity:0}}
+@media(max-width:420px){.polaroid img{height:175px}.polaroid:nth-child(3) img{height:210px}.section{padding:22px 14px}}
+@media(prefers-reduced-motion:reduce){*{animation:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<main id="site" class="hidden">
+ <header class="hero">
+  <span class="tag">FEITO COM AMOR, PARA VOCÊ</span>
+  <div class="sparkle">🌷 ✨ 🧸 ✨ 🌷</div>
+  <h1>Minha Princesa</h1>
+  <p>Esse cantinho é um pedacinho do meu carinho por você. Não precisa de uma data especial para lembrar o quanto você é importante pra mim.</p>
+ </header>
+ <section class="section">
+  <h2>Alguns pedacinhos de nós 📸</h2>
+  <p class="sub">Três registros, mil motivos para sorrir.</p>
+  <div class="gallery">
+   <div class="polaroid"><img src="fotos/foto-1.jpeg" alt="Uma foto nossa juntos"><div class="caption">Meu lugar favorito é ao seu lado 💗</div></div>
+   <div class="polaroid"><img src="fotos/foto-2.jpeg" alt="Mais uma lembrança nossa"><div class="caption">Nós dois e nossas lembranças ✨</div></div>
+   <div class="polaroid"><img src="fotos/foto-3.jpeg" alt="Uma lembrança especial nossa"><div class="caption">Que venham muitos momentos assim, BB.</div></div>
+  </div>
+ </section>
+ <section class="section">
+  <h2>Uma cartinha pra você 💌</h2>
+  <div class="note">
+   Minha Be, minha Cesa, minha vida…<br><br>
+   Fiz esse cantinho porque queria te lembrar, de um jeito diferente, o quanto você é especial pra mim. Talvez eu não consiga colocar em palavras tudo o que sinto, mas quero continuar criando lembranças, dividindo risadas e vivendo muitos momentos ao seu lado.<br><br>
+   Obrigado por ser você. Gosto de nós, gosto do nosso jeitinho e espero que a gente ainda tenha muitas histórias lindas para contar.<br><br>
+   <strong>Com todo meu carinho, meu amor. ❤️</strong>
+  </div>
+ </section>
+ <section class="section reveal">
+  <h2>Tem mais uma coisinha… 🥹</h2>
+  <p class="sub">Prometo que é rapidinho, princesa.</p>
+  <button class="primary" id="surprise">Tocar para descobrir 💝</button>
+  <div id="secret" class="secret hidden">Se eu pudesse escolher de novo, escolheria conhecer você, cuidar desse carinho e continuar escrevendo nossa história. Te amo, minha Prin! ❤️</div>
+ </section>
+ <div class="footer">Feito especialmente para você · com amor ❤️</div>
+</main>
+<script>
+document.getElementById('surprise').addEventListener('click',()=>{
+ document.getElementById('secret').classList.remove('hidden');
+ document.getElementById('surprise').textContent='Surpresa desbloqueada! ❤️';
+ for(let i=0;i<14;i++){const h=document.createElement('span');h.className='float';h.textContent=['💗','💕','✨','🌷'][i%4];h.style.left=(Math.random()*95)+'vw';h.style.animationDelay=(Math.random()*.8)+'s';h.style.fontSize=(18+Math.random()*18)+'px';document.body.appendChild(h);setTimeout(()=>h.remove(),6000);}
+});
+</script>
+</body>
+</html>
